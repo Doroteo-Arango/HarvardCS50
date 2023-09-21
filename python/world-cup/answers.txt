@@ -1,0 +1,25 @@
+Times:
+
+10 simulations: 0m0.028s
+100 simulations: 0m0.029s
+1000 simulations: 0m0.038s
+10000 simulations: 0m0.101s
+100000 simulations: 0m0.752s
+1000000 simulations: 0m7.628s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+I predicted that accurate data would be produced past 10,000 simulations. This was wrong because data for all 16 teams
+was created when simulating sample sizes of 100,000 and 1,000,000 simulations. Thus acceptable data can be produced
+only with a minimum simualation size of 100,000 simulations.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+As stated previously, acceptable data is produced starting with 100,000 simulations. So the question is essentially
+asking if runnning 1,000,000 simulations for increased accuracy worth the extra execution time & money compared to 100,000
+simulations? My answer is no because the stanard deviation of win percentage when running with 1,000,000 and 100,000
+simulations does not vary substantially. For example, for the most likely winner, Brazil, only a 0.2% deviation is obtained
+when running the more computationally expensive version of the program.
